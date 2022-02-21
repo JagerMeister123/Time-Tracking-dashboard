@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --work : hsl(15, 100%, 70%);
+    --play : hsl(195, 74%, 62%);
+    --study : hsl(348, 100%, 68%);
+    --exercice : hsl(145, 58%, 55%);
+    --social : hsl(264, 64%, 52%);
+    --self : hsl(43, 84%, 65%);
+    --background : hsl(226, 43%, 10%);
+    --section : hsl(235, 46%, 20%);
+    --person : hsl(235, 45%, 61%);
+    --highlight : hsl(236, 100%, 87%);
+}
+
+
+*{
+    color: white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--background);
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "title-section"
+    "Work"
+    "Play"
+    "Study"
+    "Exercice"
+    "Social"
+    "Self_Care";
+}
+
+article {
+    border-radius: 1rem;
+}
+
+article:nth-child(1) {
+    grid-area: title-section;
+    background-color: var(--person);
+}
+
+.selector {
+    background-color: var(--section);
+}
+
+article:nth-child(2) {
+    grid-area: Work;
+    background-color: var(--work);
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+article:nth-child(3) {
+    grid-area: Play;
+    background-color: var(--play);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+article:nth-child(4) {
+    grid-area: Study;
+    background-color: var(--study);
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+article:nth-child(5) {
+    grid-area: Exercice;
+    background-color: var(--exercice);
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+article:nth-child(6) {
+    grid-area: Social;
+    background-color: var(--social);
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+article:nth-child(7) {
+    grid-area: Self_Care;
+    background-color: var(--self);
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15%;
+    background-color: var(--section);
+    border-radius: inherit;
+}
+
+
+#Work {
+   
+}
+
+
+
+#Play {
+    
+}
+
+#Study {
+    
+}
+
+#Exercice {
+   
+}
+
+#Social {
+    
+}
+
+#Self {
+   
+}
+
+
+.weekly {
+    display: none;
+}
+
+.monthly {
+    display: none;
+}
+/* section would take the background image of the section */

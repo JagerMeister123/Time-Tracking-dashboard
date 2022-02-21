@@ -4,77 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-play.svg">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
 
-  Report for
-  Jeremy Robson
+<!-- Title Card -->
 
-  Daily
-  Weekly
-  Monthly
+    <article>
+      <div class="person">
+        <img src="images/image-jeremy.png">
+        <p>Report for</p>
+        <p>Jeremy Robson</p>
+      </div>
+      <section id="person">
+        <div class="selector">
+          <p>Daily</p>
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div>
+      </section>
+    </article>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <article class="Card">
+      <section id="Work">
+        <h1 class="section-title">Work</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">5hrs</p>
+          <p class="previous">Yesterday - 7hrs</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">32hrs</p>
+          <p class="previous">Last week - 36hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">103hrs</p>
+          <p class="previous">Last month - 128hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+    <article class="Card">
+      <section id="Play">
+        <h1 class="section-title">Play</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">1hr</p>
+          <p class="previous">Yesterday - 2hrs</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">10hrs</p>
+          <p class="previous">Last week - 8hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">23hrs</p>
+          <p class="previous">Last month - 29hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+ 
+
+    <article class="Card">
+      <section id="Study">
+        <h1 class="section-title">Study</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">0hrs</p>
+          <p class="previous">Yesterday - 1hr</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">4hrs</p>
+          <p class="previous">Last week - 7hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">13hrs</p>
+          <p class="previous">Last month - 19hrs</p>
+        </div>
+      </section>
+    </article>
+
+ 
+
+
+    <article class="Card">
+      <section id="Exercise">
+        <h1 class="section-title">Exercise</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">1hr</p>
+          <p class="previous">Yesterday - 1hr</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">4hrs</p>
+          <p class="previous">Last week - 5hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">11hrs</p>
+          <p class="previous">Last month - 18hrs</p>
+        </div>
+      </section>
+    </article>
+
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+    <article class="Card">
+      <section id="Social">
+        <h1 class="section-title">Social</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">1hr</p>
+          <p class="previous">Yesterday - 3hrs</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">5hrs</p>
+          <p class="previous">Last week - 10hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">21hrs</p>
+          <p class="previous">Last month - 23hrs</p>
+        </div>
+      </section>
+    </article>
+
+
+
+
+    <article class="Card">
+      <section id="Self">
+        <h1 class="section-title">Self Care</h1>
+        <div class="three-points_icon"></div>
+        <div class="daily">
+          <p class="actual">0hrs</p>
+          <p class="previous">Yesterday - 1hr</p>
+        </div>
+        <div class="weekly">
+          <p class="actual">2hrs</p>
+          <p class="previous">Last week - 2hrs</p>
+        </div>
+        <div class="monthly">
+          <p class="actual">7hrs</p>
+          <p class="previous">Last month - 11hrs</p>
+        </div>
+      </section>
+    </article>
+
+
+  </main>
 </body>
+
+<script src="script.js"></script>
 </html>
