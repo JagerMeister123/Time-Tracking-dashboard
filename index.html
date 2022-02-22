@@ -12,22 +12,22 @@
 
 <body>
   <main>
-
+  
 <!-- Title Card -->
 
     <article>
-      <div class="person">
-        <img src="images/image-jeremy.png">
-        <p>Report for</p>
-        <p>Jeremy Robson</p>
-      </div>
       <section id="person">
-        <div class="selector">
-          <p>Daily</p>
-          <p>Weekly</p>
-          <p>Monthly</p>
+        <div><div id="profile_picture"></div></div>
+        <div>
+          <p id="report">Report for</p>
+          <p id="name">Jeremy Robson</p>
         </div>
       </section>
+      <div class="selector">
+        <p onclick="show(this)">Daily</p>
+        <p onclick="show(this)">Weekly</p>
+        <p onclick="show(this)">Monthly</p>
+      </div>
     </article>
 
 
@@ -35,16 +35,16 @@
     <article class="Card">
       <section id="Work">
         <h1 class="section-title">Work</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">5hrs</p>
           <p class="previous">Yesterday - 7hrs</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">32hrs</p>
           <p class="previous">Last week - 36hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">103hrs</p>
           <p class="previous">Last month - 128hrs</p>
         </div>
@@ -55,16 +55,16 @@
     <article class="Card">
       <section id="Play">
         <h1 class="section-title">Play</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">1hr</p>
           <p class="previous">Yesterday - 2hrs</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">10hrs</p>
           <p class="previous">Last week - 8hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">23hrs</p>
           <p class="previous">Last month - 29hrs</p>
         </div>
@@ -76,16 +76,16 @@
     <article class="Card">
       <section id="Study">
         <h1 class="section-title">Study</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">0hrs</p>
           <p class="previous">Yesterday - 1hr</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">4hrs</p>
           <p class="previous">Last week - 7hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">13hrs</p>
           <p class="previous">Last month - 19hrs</p>
         </div>
@@ -98,16 +98,16 @@
     <article class="Card">
       <section id="Exercise">
         <h1 class="section-title">Exercise</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">1hr</p>
           <p class="previous">Yesterday - 1hr</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">4hrs</p>
           <p class="previous">Last week - 5hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">11hrs</p>
           <p class="previous">Last month - 18hrs</p>
         </div>
@@ -121,16 +121,16 @@
     <article class="Card">
       <section id="Social">
         <h1 class="section-title">Social</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">1hr</p>
           <p class="previous">Yesterday - 3hrs</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">5hrs</p>
           <p class="previous">Last week - 10hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">21hrs</p>
           <p class="previous">Last month - 23hrs</p>
         </div>
@@ -143,24 +143,24 @@
     <article class="Card">
       <section id="Self">
         <h1 class="section-title">Self Care</h1>
-        <div class="three-points_icon"></div>
-        <div class="daily">
+        <div class="three-points_icon"><img src="images/icon-ellipsis.svg"></div>
+        <div class="Daily">
           <p class="actual">0hrs</p>
           <p class="previous">Yesterday - 1hr</p>
         </div>
-        <div class="weekly">
+        <div class="Weekly">
           <p class="actual">2hrs</p>
           <p class="previous">Last week - 2hrs</p>
         </div>
-        <div class="monthly">
+        <div class="Monthly">
           <p class="actual">7hrs</p>
           <p class="previous">Last month - 11hrs</p>
         </div>
       </section>
     </article>
 
-
-  </main>
+  
+</main>
 </body>
 
 <script src="script.js"></script>

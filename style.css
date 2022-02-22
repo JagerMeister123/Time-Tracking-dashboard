@@ -9,8 +9,8 @@
     --self : hsl(43, 84%, 65%);
     --background : hsl(226, 43%, 10%);
     --section : hsl(235, 46%, 20%);
-    --person : hsl(235, 45%, 61%);
-    --highlight : hsl(236, 100%, 87%);
+    --person : rgb(87, 70, 234);
+    --faded : hsl(236, 100%, 87%);
 }
 
 
@@ -21,12 +21,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 300;
 }
 
 main {
+    padding: 1rem;
     background-color: var(--background);
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-areas: 
     "title-section"
     "Work"
@@ -37,16 +39,13 @@ main {
     "Self_Care";
 }
 
+
 article {
     border-radius: 1rem;
 }
 
 article:nth-child(1) {
     grid-area: title-section;
-    background-color: var(--person);
-}
-
-.selector {
     background-color: var(--section);
 }
 
@@ -100,41 +99,112 @@ section {
     margin-top: 15%;
     background-color: var(--section);
     border-radius: inherit;
+    padding: 1.75rem;
 }
 
 
-#Work {
-   
+#person {
+    font-size: 1em;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    background-color: var(--person);
+    height: 7rem;
 }
 
-
-
-#Play {
-    
+#person div:first-child {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
 }
 
-#Study {
-    
+#profile_picture {
+    width: 4rem;
+    height: 4rem;
+    background-image: url(images/image-jeremy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 50%;
+    border: 0.17rem solid white;
+
 }
 
-#Exercice {
-   
+#person div:last-child {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
 }
 
-#Social {
-    
+#report {
+    font-size: 0.65rem;
 }
 
-#Self {
-   
+.selector p {
+    font-size: 0.8rem;
+    color: var(--faded);
 }
 
+.selector p:hover {
+    color: white;
+    cursor: pointer;
+}
 
-.weekly {
+.selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+}
+
+.three-points_icon {
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+
+.Daily {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 0.85rem;
+}
+
+.actual {
+    font-size: 1.25rem;
+}
+
+.previous {
+    font-size: 0.7rem;
+    color: var(--faded);
+}
+
+/* Later I will toggle the display to be flex with JS*/
+.Weekly {
+    grid-column: span 2;
     display: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.monthly {
+.Monthly {
+    grid-column: span 2;
     display: none;
+    justify-content: space-between;
+    align-items: center;
 }
-/* section would take the background image of the section */
+
+
+@media (min-width: 700px) {
+
+    
+}
